@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<link rel="stylesheet" href="./01.css">
+	<script src="./util.js"></script>
+
+	<body>
+		<div class="main">
+			<!-- 输入城市名称 -->
+			<div class="inputName">
+				<input type="text" class="inputbox" value="请输入城市名称(最小单位市)">
+				<button class="btnName">确定</button>
+			</div>
+			<!-- 城市名称 -->
+			<header class="title">
+				城市:
+				<span class="cityName" id="city">城市名称</span>
+			</header>
+			<!-- 温度，天气，日期 -->
+			<div class="temDate">
+				<span class="temNum">27</span>
+				<span class="temUnit">℃</span>
+				<span class="temCondition">晴</span>
+				<span class="newDate">12月20日21:35</span>
+			</div>
+			<!-- 天气状况：体感温度，湿度，风向，气压 -->
+			<div class="weaInformation">
+				<span class="temBody">体感温度</span>
+				<span class="humidity">湿度</span>
+				<span class="windForce">风向</span>
+				<span class="airPressure">气压</span>
+			</div>
+			<!-- 空气质量 -->
+			<div class="air">
+				<img src="./weaImg/airaer.png" alt="">
+				<span class="airtext">75空气良</span>
+			</div>
+			<!-- 三日天气（今天，明天，后天） -->
+			<div class="weaDays">
+				<div class="days">
+					<span class="tody">今天</span>
+					<img src="./weaImg/cloud.png" alt="" class="oneimg">
+					<span class="todytext">多云转晴</span>
+					<span class="todytem">-27℃-29℃</span>
+				</div>
+				<div class="days">
+					<span class="tomorrow">明天</span>
+					<img src="./weaImg/cloud.png" alt="" class="twoimg">
+					<span class="tomorrowtext">多云转晴</span>
+					<span class="tomorrowtem">-27℃-29℃</span>
+				</div>
+				<div class="days">
+					<span class="lastDay">后天</span>
+					<img src="./weaImg/cloud.png" alt="" class="threeimg">
+					<span class="lastDaytext">多云转晴</span>
+					<span class="lastDaytem">-27℃-29℃</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./01.js"></script>
+</html>
